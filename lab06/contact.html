@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="../lab06/styles.css">
+    </head>
+    <body>
+        <form action="mailto:bchen44@syr.edu"  method="POST">
+        <h1>Contact</h1>
+        <p>Bowen Chen, 919 E Genesee Street, Syracuse, NY, 13210</p><br>
+        <a href="mailto:bchen44@syr.edu">Bowen Chen Email</a><br>
+        <a href="https://www.linkedin.com/in/bowen-chen1003/"><img src="../images/LI-Logo.png" alt="my photo">">My Linkedin Profile</a><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.732697456986!2d-76.13911764921886!3d43.04705529932939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3a699e502a7%3A0xb691d71e17210137!2s919%20E%20Genesee%20St%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1631808190407!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe><br>
+        <label for="fullname">Enter Full Name:</label>
+                <input type="text" id="fullname" name="fname">
+                <br>
+                <label for="complaint">Write a message to me:</label><br>
+                <textarea id="complaint" name="complaint">Enter your message here.</textarea>
+                <br>
+                <p>Do you like my profile?</p>
+                <input type="radio" id="angry1" name="angry" value="very angry">
+                <label for="angry1">Yes</label>
+                <input type="radio" id="angry2" name="angry" value="not too angry">
+                <label for="angry2">No</label>
+                <br>
+                <label for="contactmethod">Please rate my profile</label>
+                <select id="contactmethod" name="contactmethod">
+                    <option value="phone">1 star</option>
+                    <option value="email">2 stars</option>
+                    <option value="snail mail">3 stars</option>
+                </select>
+                <br>
+                <label for="contacttime">Are you going to hire me?</label>
+                <input type="checkbox" id="contacttime" name="contacttime" value="yes">
+                <br>
+                    <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
