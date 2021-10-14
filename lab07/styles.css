@@ -3,7 +3,8 @@ body {color: #F9ED69;
 p {color: #F08A5D;
     background-color:#fff3b0;}
 a:link {color: #B83B5E;}
-a:visited {color: #6A2C70}
+a:visited {color: #6A2C70;}
 a:hover {text-decoration-style: wavy;}
 nav {background-color:#fff3b0;}
 nav a {color: #F21170;}
+nav a:hover {background-color: #6A2C70;}
