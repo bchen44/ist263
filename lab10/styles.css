@@ -1,0 +1,17 @@
+body {color: #800080;
+    background-color: #F0F8FF;}
+p {color: #F08A5D;
+    background-color:#fff3b0;}
+a:link {color: #B83B5E;}
+a:visited {color: #6A2C70;}
+a:hover {text-decoration-style: wavy;}
+nav {background-color:#fff3b0;}
+nav a {color: #F21170;}
+nav a:hover {background-color: #F0F8FF;}
+nav {padding: 10px }
+nav {margin-bottom: 30px}
+.nav_link {width: 100%;}
+@media only screen and (max-width: 600px) {span {display: none;} nav a{display: block;}}
+@media only screen and (min-width: 600px) {span {display: contents;} }
+@media only screen and (min-width: 957px) { .form {flex: 1; order: 1; margin-left: 300px;}}
+@media only screen and (min-width: 957px) { .contact {margin-left: 300px;}}
