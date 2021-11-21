@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <style>
+        /* skip to content is 3 things:
+        1. html link "skip to content"
+        2. you need an anchor for that link
+        3. style in css with position absolute and left to make it disappear
+        3b. bring it back by changing left value - focus pseudo class */
+        #skip {
+            position: absolute; /* relative to parent container */
+            left: -999px; /* move it off the page */
+            background-color: orange;
+        }
+        #skip:focus {
+            left: 10px; /* move our link back to screen*/
+        }
+    </style>
+</head>
+<body>
+    <!-- skip to content is an anchor link, "#"" specifies where we are going on the page -->
+    <a id="skip" href="#maincontent">Skip to Content</a>
+    <!-- tabindex is a new attribute that says what order elements are in when using tab key to surf -->
+    <a href="index.html" tabindex="3">Home</a>
+    <a href="about.html" tabindex="2">About</a>
+    <a href="contact.html" tabindex="1">Contact</a>
+
+    <p>Lorem ipsum dolor sit amet, mea in fierent maluisset. Democritum adipiscing ei vel. Aliquam repudiare pro an, ius veri audiam te. Nam tale etiam luptatum in, eam ut vero dicit oportere. Te has erant expetenda gubergren.</p>
+    <p>Lorem ipsum dolor sit amet, mea in fierent maluisset. Democritum adipiscing ei vel. Aliquam repudiare pro an, ius veri audiam te. Nam tale etiam luptatum in, eam ut vero dicit oportere. Te has erant expetenda gubergren.</p>
+    <p>Lorem ipsum dolor sit amet, mea in fierent maluisset. Democritum adipiscing ei vel. Aliquam repudiare pro an, ius veri audiam te. Nam tale etiam luptatum in, eam ut vero dicit oportere. Te has erant expetenda gubergren.</p>
+    <a id="maincontent"></a> <!-- this is an anchor -->
+    <p>This is where our main page content is. Lorem ipsum dolor sit amet, mea in fierent maluisset. Democritum adipiscing ei vel. Aliquam repudiare pro an, ius veri audiam te. Nam tale etiam luptatum in, eam ut vero dicit oportere. Te has erant expetenda gubergren.</p>
+    
+</body>
+</html>
