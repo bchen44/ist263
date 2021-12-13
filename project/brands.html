@@ -5,21 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brands</title>
+    <style>
+        .opener {text-align: center;
+                font-size: 5em;}
+        .brands, .brandsname{display: flex;
+                margin-left: 10%;
+                margin-right: 10%;}
+        .brands {margin-bottom: 0px;}
+        .brandsname {justify-content: space-around;}
+        .brands img {width: 100%;}
+        #offwhite, #nike, #supreme, #bape{position: relative;}
+        #offwhite_text, #nike_text, #supreme_text, #bape_text{
+            position: absolute;
+            display: none;
+            text-align: center;
+            width: 100%;
+            height: 99%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+        }
+        @media only screen and (max-width: 768px) {
+            .opener {font-size: 2em;}
+        }
+    </style>
+    <script>
+        // function showDetail(name) {
+        //     document.getElementById(name).style.display = 'block'
+        // }
+        // function offDetail(name) {
+        //     document.getElementById(name).style.display = 'none'
+        // }
+        function showDetail(name) {
+            document.getElementById('offwhite_text').style.display = 'none'
+            document.getElementById('nike_text').style.display = 'none'
+            document.getElementById('supreme_text').style.display = 'none'
+            document.getElementById('bape_text').style.display = 'none'
+            document.getElementById(name).style.display = 'block'
+        }
+        function disLarge(name) {
+            // document.getElementById(name).style.height = '30%'
+            document.getElementById('offwhite').style.width = '23%'
+            document.getElementById('nike').style.width = '23%'
+            document.getElementById('supreme').style.width = '23%'
+            document.getElementById('bape').style.width = '23%'
+            document.getElementById(name).style.width = '25%'
+        }
+        function disNormal() {
+            // document.getElementById(name).style.height = '30%'
+            document.getElementById('offwhite').style.width = '23%'
+            document.getElementById('nike').style.width = '23%'
+            document.getElementById('supreme').style.width = '23%'
+            document.getElementById('bape').style.width = '23%'
+        }
+        function offDetail() {
+            document.getElementById('offwhite_text').style.display = 'none'
+            document.getElementById('nike_text').style.display = 'none'
+            document.getElementById('supreme_text').style.display = 'none'
+            document.getElementById('bape_text').style.display = 'none'
+        }
+
+    </script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="https://bchen44.github.io/ist263/project/index.html">Home <span>|</span></a>
-        <a href="https://bchen44.github.io/ist263/project/genres.html">Genres <span>|</span></a>
+    <nav class="links">
+        <a href="https://bchen44.github.io/ist263/project/index.html">Home </a>
+        <a href="https://bchen44.github.io/ist263/project/genres.html">Genres </a>
         <a href="https://bchen44.github.io/ist263/project/brands.html">Brands</a>
     </nav>
-    <h1>Brand Recommendations</h1><br>
-    <img  src="offwhite.jpeg" alt="skateboard">
-    <div>Off_White</div> <br>
-    <img src="techwear.jpg" alt="skateboard">
-    <div>Nike</div> <br>
-    <img src="hypebeast.jpg" alt="skateboard">
-    <div>Supreme</div> <br>
-    <img src="athleisure.jpg" alt="skateboard">
-    <div>Adidas</div> <br>
+    <h1 class="opener">Brand Recommendations</h1><br>
+    <div class="brands" onmouseleave="offDetail();disNormal()">
+        <div id="offwhite">
+            <div id="offwhite_text">Hello World, sdjfsdjfosij dfoisjdf iojsoidncv osdnvci usbdcjwosijc sdfa sdafa sdgdfsf gsdfg dfas f</div>
+            <img  src="offwhite.png" alt="Offwhite" onmouseover="showDetail('offwhite_text');disLarge('offwhite')">
+        </div>
+        <div id="nike">
+            <div id="nike_text">Hello World, sdjfsdjfosij dfoisjdf iojsoidncv osdnvci usbdcjwosijc sdfa sdafa sdgdfsf gsdfg dfas f</div>
+            <img src="nike.png" alt="Nike" onmouseover="showDetail('nike_text');disLarge('nike')">
+        </div>
+        <div id="supreme">
+            <div id="supreme_text">Hello World, sdjfsdjfosij dfoisjdf iojsoidncv osdnvci usbdcjwosijc sdfa sdafa sdgdfsf gsdfg dfas f</div>
+            <img src="supreme.png" alt="Supreme" onmouseover="showDetail('supreme_text');disLarge('supreme')">
+        </div>
+        <div id="bape">
+            <div id="bape_text">Hello World, sdjfsdjfosij dfoisjdf iojsoidncv osdnvci usbdcjwosijc sdfa sdafa sdgdfsf gsdfg dfas f</div>
+            <img src="bape.png" alt="Bape" onmouseover="showDetail('bape_text');disLarge('bape')">
+        </div>
+    </div>
+    <div class="brandsname">
+        <div>Off_White</div>
+        <div>Nike</div>
+        <div>Supreme</div>
+        <div>Bape</div>
+    </div>
+    <hr>
+    <footer>
+        <div class="copyright">&copy; 2021</div>
+    </footer>
+
 </body>
 </html>

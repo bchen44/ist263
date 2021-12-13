@@ -5,22 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genres</title>
+    <style>
+        img {width: 100%;}
+        .opener {text-align: center;
+                font-size: 5em;}
+        .image {position: relative;
+                /* text-align: center; */
+                /* margin-left: 10%;
+                margin-right: 10%;} */
+              margin-bottom: 100px;}
+        .image img{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .title {position: absolute;
+                 /* left: 46%;  */
+                font-size: 4em;
+                top:-40px;}
+        /* .main {width: 1500px;} */
+        .text {font-size: 2em;}
+        @media only screen and (max-width: 600px) {
+            .opener{font-size: 3em;}
+            .title{font-size: 2em;}
+            .text{font-size: 1em;}
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="https://bchen44.github.io/ist263/project/index.html">Home <span>|</span></a>
-        <a href="https://bchen44.github.io/ist263/project/genres.html">Genres <span>|</span></a>
+    <nav class="links">
+        <a href="https://bchen44.github.io/ist263/project/index.html">Home </a>
+        <a href="https://bchen44.github.io/ist263/project/genres.html">Genres </a>
         <a href="https://bchen44.github.io/ist263/project/brands.html">Brands</a>
     </nav>
-    <h1>Different Genres in Streetwear</h1><br>
-    <img  src="skate.jpg" alt="skateboard">
-    <div>•	Skatewear. This particular wear was made popular by the culture of skateboarders across the globe.</div> <br>
-    <img src="techwear.jpg" alt="techwear">
-    <div>•	Techwear. This is a style that focuses on functionality and style.</div> <br>
-    <img src="hypebeast.jpg" alt="hypebeast">
-    <div>•  Hypebeasts. This is a style that is mainly promoted by celebrities.</div> <br>
-    <img src="athleisure.jpg" alt="athleisure">
-    <div>•	Athleisure. Casual athletic wear.</div> <br>
-    
+    <h1 class="opener">Different Genres in Streetwear</h1><br>
+        <div class="main">
+            <div class= "image">
+                <div class= "title">Skatewear</div>
+                <img  src="skate.png" alt="skateboard">
+                <div class="text">•	Skatewear. This particular wear was made popular by the culture of skateboarders across the globe.</div> <br>
+            </div>
+            <div class= "image">
+                <div class= "title">Techwear</div>
+                <img  class= "tech" src="techwear.png" alt="techwear">
+                <div class="text">•	Techwear. This is a style that focuses on functionality and style.</div> <br>
+            </div>
+            <div class= "image">
+                <div class= "title">Hypebeast</div>
+                <img src="hypebeast.png" alt="hypebeast">
+                <div class="text">•  Hypebeasts. This is a style that is mainly promoted by celebrities.</div> <br>
+            </div>
+            <div class="image">
+                <div class= "title">Athleisure</div>
+                <img class="athleisure" src="athleisure.png" alt="athleisure">
+                <div class="text">•	Athleisure. Casual athletic wear.</div> <br>
+            </div>
+        </div>
+    <hr>
+    <footer>
+        <div class="copyright">&copy; 2021</div>
+    </footer>
 </body>
 </html>
