@@ -15,4 +15,13 @@ h1 {font-size: 75px;}
     justify-content: space-around;
     background-color: #fff3b0;
     padding: 5px;}
+#skip {
+    position: absolute;
+    left: -999px;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+#skip:focus {
+    left: 10px;
+}
 @media only screen and (max-width: 600px) {nav a{display: block;} nav a{margin-top: 20px;}}
