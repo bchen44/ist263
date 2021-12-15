@@ -15,5 +15,4 @@ h1 {font-size: 75px;}
     justify-content: space-around;
     background-color: #fff3b0;
     padding: 5px;}
-.copyright {color: gray;}
 @media only screen and (max-width: 600px) {nav a{display: block;} nav a{margin-top: 20px;}}
