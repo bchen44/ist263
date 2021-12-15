@@ -25,13 +25,29 @@
             background-color: rgba(0, 0, 0, 0.6);
             color: white;
         }
-        #offwhite_text p, #nike_text p, #supreme_text p, #bape_text p {padding-top: 8px;
+        #offwhite_text p, #nike_text p, #supreme_text p, #bape_text p {
             padding-left: 8px;
             padding-right: 8px;
             line-height: 1.5em;
         }
         @media only screen and (max-width: 768px) {
             .opener {font-size: 2em;}
+        }
+        @media only screen and (max-width:1023px) {
+            #offwhite_text, #nike_text, #supreme_text, #bape_text {
+                position:fixed;
+                /* bottom: -300px; */
+                z-index: 100;
+                top: 42%;
+                left: 40%;
+                width: 300px;
+                height: 250px;
+                margin-top: -120px;
+                margin-left: -120px;
+                background-color: rgba(0, 0, 0, 0.6);
+                /* box-shadow: 0px 0px 0px 100vw rgba(0, 0, 0, 0.6); */
+                color: white;
+            }
         }
     </style>
     <script>
